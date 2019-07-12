@@ -5,13 +5,16 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-<bean id="man" class="com.pack.springdemo.Man">
-<property name="name" value="Kiran"> </property>
-<property name="age" value="21"> </property>
-</bean>
-<bean id="women" class="com.pack.springdemo.Women">
+ <bean id="man" class="com.pack.springdemo.Man">
+<!-- <property name="name" value="Kiran"> </property>
+<property name="age" value="21"> </property> -->
+<constructor-arg name="name" value="Kiran"></constructor-arg>
+<constructor-arg name="age" value="21"></constructor-arg>
+
+</bean> 
+ <bean id="women" class="com.pack.springdemo.Women">
 <property name="name" value="aa"> </property>
 <property name="age" value="21"> </property>
 </bean>
-
+ 
 </beans>
